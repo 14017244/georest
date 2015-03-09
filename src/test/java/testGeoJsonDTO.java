@@ -2,18 +2,13 @@
 /**
  * Created by arno on 09/03/15.
  */
-import com.sun.jersey.api.core.ResourceConfig;
-import fr.istic.m2gla.georestservice.GeoJsonDTO;
-import fr.istic.m2gla.georestservice.GeoPosition;
-import fr.istic.m2gla.georestservice.Position;
+import fr.istic.m2gla.DTO.GeoJsonDTO;
+import fr.istic.m2gla.DTO.Position;
 //import org.glassfish.jersey.test.JerseyTest;
 import org.junit.*;
 
-import javax.ws.rs.core.Application;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class testGeoJsonDTO {
     @Before

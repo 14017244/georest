@@ -1,13 +1,8 @@
-package fr.istic.m2gla.georestservice;
-
-import org.json.JSONObject;
+package fr.istic.m2gla.DTO;
 
 import java.io.Serializable;
-import java.io.SerializablePermission;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by arno on 09/03/15.

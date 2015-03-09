@@ -1,4 +1,4 @@
-package fr.istic.m2gla.georestservice;
+package fr.istic.m2gla.DTO;
 
 
 

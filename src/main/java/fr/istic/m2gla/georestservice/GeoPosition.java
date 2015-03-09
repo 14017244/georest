@@ -3,8 +3,9 @@ package fr.istic.m2gla.georestservice;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import org.json.JSONException;
-import org.json.JSONObject;
+
+import fr.istic.m2gla.DTO.GeoJsonDTO;
+
 /**
  * Created by arno on 12/02/15.
  */
@@ -28,6 +29,18 @@ public class GeoPosition {
         return Response.status(200).entity("La zone est : " + zone).build();
 
     }
+
+    @POST
+    @Path("point")
+    @Consumes({ MediaType.APPLICATION_JSON })
+    public Response getPoint(String point) {
+
+        return Response.status(200).entity("Le point est : " + point).build();
+
+    }
+
+
+
 
     @POST
     @Path("zoneObject")
