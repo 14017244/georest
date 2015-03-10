@@ -25,7 +25,7 @@ public class testGeoJsonDTO {
 
     @Test
     public void testPosition()  {
-        Position p1 = new Position(10.0,12.0);
+       /* Position p1 = new Position(10.0,12.0);
         Position p2 = new Position(12.0,11.0);
         Position p3 = new Position(11.0,10.0);
         List<List<Position>> zones = new ArrayList<List<Position>>();
@@ -34,7 +34,7 @@ public class testGeoJsonDTO {
         zone.add(p2);
         zone.add(p3);
         zones.add(zone);
-        GeoJsonDTO geoJson = new GeoJsonDTO("Polygon",zones);
+       GeoJsonDTO geoJson = new GeoJsonDTO("Polygon",zones);*/
 
     }
 }

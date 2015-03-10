@@ -5,6 +5,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import fr.istic.m2gla.DTO.GeoJsonDTO;
+import fr.istic.m2gla.DTO.Position;
 
 /**
  * Created by arno on 12/02/15.
@@ -44,9 +45,16 @@ public class GeoPosition {
 
     @POST
     @Path("zoneObject")
-    @Consumes({ MediaType.APPLICATION_JSON })
+    @Consumes( MediaType.APPLICATION_JSON )
     public Response getPositionObject(GeoJsonDTO zone) {
-        return Response.status(200).entity("Le nom de la zone est : " + zone.getType()).build();
+        return Response.status(200).entity("Le nom de la zone est : "+zone.getType()).build();
+    }
+
+    @POST
+    @Path("position")
+    @Consumes({ MediaType.APPLICATION_JSON })
+    public Response getPositionObject(Position zone) {
+        return Response.status(200).entity("Le nom de la zone est : "+zone.getLatitude()).build();
     }
 
     @GET

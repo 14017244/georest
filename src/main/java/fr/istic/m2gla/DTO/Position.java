@@ -1,10 +1,10 @@
 package fr.istic.m2gla.DTO;
 
 
-
 /**
  * Created by arno on 09/03/15.
  */
+
 public class Position {
 
 
